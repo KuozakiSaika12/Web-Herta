@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/assets/css/regis.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link href="./output.css" rel="stylesheet">
+    
+</head>
+<body>
+    
+    
+    <div class="container-register" id="myDiv content">
+        <div class="login-header">
+            <h1 id="title">
+                Register
+            </h1>
+            <p>Welcome To Shiroko</p>
+        </div>
+
+        <form action="" id="regis-form" class="active">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter Your Password">
+            
+            <label for="password">Confirm Password</label>
+            <input type="password" name="password" id="password" placeholder="confirm Password">
+
+            <button type="submit">Register</button>
+            <div class="login-footer">
+                <p>Don't have an Account? <a href="#" onclick="toggleform('login')">Sign in</a></p>
+            </div>
+        </form>
+
+        
+        <form action="" id="login-form">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter Your Password">
+
+            <button type="submit">Register</button>
+            <div class="login-footer">
+                <p>Don't have an Account? <a href="#" onclick="toggleform('register')">Sign in</a></p>
+            </div>
+        </form>
+    </div>
+    </div>
+    
+
+
+    <script src="js/js.js"></script>
+    <script src="js/regis.js"></script>
+
+</body>
+</html>
