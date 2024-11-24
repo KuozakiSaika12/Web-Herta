@@ -66,7 +66,7 @@ body{
         }
     }
 }
-a.active {
+.main-nav .nav a.active {
     background-color: rgb(7, 218, 255); /* สีพื้นหลัง */
     color: #1f1e1e;/* สีตัวอักษร */
     border-radius: 10px; /* ขอบมน */
