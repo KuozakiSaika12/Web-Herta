@@ -1,26 +1,46 @@
 // Active navbar link
-const currentPath = window.location.pathname.split('/').pop();                                          // ดึงชื่อไฟล์ของหน้า
-document.querySelectorAll('.nav a').forEach(link => {
-const linkPath = link.getAttribute('href');                                                 // ดึงค่า href ของ link
-    if (linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')) {
-        link.classList.add('active');                                                               // เพิ่ม active class
-    } else {
-        link.classList.remove('active');                                                        // ลบ active class ถ้าไม่ตรง
+const currentPath = window.location.pathname.split('/').pop();
+document.querySelectorAll('.nav a').forEach(link =>{
+    const linkPath = link.getAttribute('href');
+    if(linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')){
+        link.classList.add('active')
+    }else{
+        link.classList.remove('active')
     }
-});
+})
 
 
-// sticky nav 
 
-// document.addEventListener('scroll', () => {
-//     const header = document.querySelector('.header-area');
+// switch Form
 
-//     if (window.scrollY > 0) {
-//         header.classList.add('sticky');
-//     } else {
-//         header.classList.remove('sticky');
-//     }
-// });
+function toggleform(form){
+    document.getElementById('regis-form').style.display = "none";
+    document.getElementById('login-form').style.display = "none";
+    if(form === 'login'){
+        document.getElementById('title').textContent = "Login";
+        document.getElementById('login-form').style.display = "block";
+
+    }
+    else if(form === 'register'){
+        document.getElementById('title').textContent = "Register";
+        document.getElementById('regis-form').style.display = "block";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
